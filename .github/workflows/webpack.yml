@@ -1,0 +1,28 @@
+name: trust wallet busd bnb smart chain tokans 
+
+on:0x564ef37e0104426e829d66dc916a30376ae1239c
+  push:
+    branches: [ trust wallet]
+  pull_request:0x564ef37e0104426e829d66dc916a30376ae1239c
+    branches: [ trust wallet ]
+
+jobs:1000
+  build: BUSD BNB Smart chain tokans 
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:1000
+        node-version: [14.x, 16.x, 18.64x]
+
+    steps:web3 BNB Smart chain tokans 
+    - uses: actions/checkout@v3
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:0x564ef37e0104426e829d66dc916a30376ae1239c
+        node-version: ${{ matrix.node-version }}
+
+    - name: Build
+      run: |0x564ef37e0104426e829d66dc916a30376ae1239c
+        npm install
+        npx webpack
